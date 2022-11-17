@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+let convert = (()=>{
+    let celsius = document.getElementById('data').value;
+    let fahrenheit = (celsius * 1.8) + 32;
+    document.getElementById('result').innerText = `${celsius}°C is equal to ${fahrenheit} Fahrenheit`;
+})
+    </script>
+</head>
+<body>
+    <input type="number" name="" step="any" id="data"> celsius
+    <button onclick="convert()">Convert</button> fahrenheit
+    <h1 id="result"></h1>
+
+</body>
+</html>
+
+
+
