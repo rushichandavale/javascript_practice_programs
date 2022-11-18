@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let check = (()=>{
-           let value = document.getElementById('data').value;
-            // let result = Math.sign(a);
+        let check = ()=>{
+            let value = document.getElementById('data').value;
             if(value > 0){
                 result = `${value} is positive`
-            } 
+            }
             else if(value < 0){
                 result = `${value} is negative`
-            } 
-            else if (value == 0){
+            }
+            else if(value == 0 ){
                 result = `${value} is zero`
             }
             else{
                 result = `${value} is not a number`
             }
             document.getElementById('result').innerHTML = result;
-        })
+        }
     </script>
 </head>
 <body>
