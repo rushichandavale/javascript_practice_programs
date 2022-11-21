@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(p,q,r){
+            if(p>=q && p>=r){
+                return p;
+            }
+            else if(q>=p && q>=r){
+                return q
+            }
+            else{
+                return r
+            }
+        }
+        let a = prompt("enter first number")
+        let b = prompt("enter second number")
+        let c = prompt("enter third number")
+        // let x = check(a,b,c)
+        console.log(check(a,b,c))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
