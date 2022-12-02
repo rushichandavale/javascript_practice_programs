@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt("enter a string")
+        let stringArray = string.split('');
+        let stringArrayRev = stringArray.reverse()
+        let stringRev = stringArrayRev.join('')
+
+        if(string === stringRev){
+            console.log(`${string} is palindrome`)
+        }else{
+            console.log(`${string} is not palindrome`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
