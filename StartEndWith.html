@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = prompt("enter a string")
+        console.log(string)
+        let FirstChar = string.startsWith("r")
+        let lastChar = string.endsWith("r")
+
+        if(FirstChar == true && lastChar == true){
+            console.log(`${string} starts with and ends with given character`)
+        }else if(FirstChar == true && lastChar == false){
+            console.log(`${string} starts with given character`)
+        }else if(FirstChar == flase && lastChar == true){
+            console.log(`${string} ends with given character`)
+        }
+        else{
+            console.log(`${string}either start not ends with given character`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
