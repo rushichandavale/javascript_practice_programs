@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>document</title>
+    <script>
+        var s1 = parseInt(prompt("enter first subject marks"))
+        var s2 = parseInt(prompt("enter second subject marks"))
+        var s3 = parseInt(prompt("enter third subject marks"))
+
+        var counter = 0;
+
+        if (s1 < 50) {
+            counter += 1
+        }
+        if (s2 < 50) {
+            counter += 1
+        }
+        if (s3 < 50) {
+            counter += 1
+        }
+
+        var c = confirm("do you want to display result")
+        if (c == true) {
+            if (counter == 0) {
+                var total = s1 + s2 + s3;
+                var per = total / 3
+                if (per >= 70) {
+                    document.write("Remark: distinction")
+                }
+                else if (per >= 60) {
+                    document.write("Remark: first class")
+                }
+                else if (per >= 50) {
+                    document.write("Remark: second class")
+                }
+            }
+            else if (counter < 2) {
+                document.write("Remark: ATKT")
+            }
+
+            else {
+                document.write("Remark: fail")
+            }
+        }
+        else {
+            document.write("dont display result")
+        }
+    </script>
+</head>
+
+<body bgcolor="pink">
+
+</body>
+
+</html>
