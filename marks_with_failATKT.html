@@ -25,17 +25,19 @@
                 var total = s1 + s2 + s3;
                 var per = total / 3
                 if (per >= 70) {
-                    document.write("Remark: distinction")
+                    document.write("Remark: distinction ","<br> Total Percentage is : ", per.toFixed(2))
                 }
                 else if (per >= 60) {
-                    document.write("Remark: first class")
+                    document.write("Remark: first class ", "<br> Total Percentage is : ",  per.toFixed(2))
                 }
                 else if (per >= 50) {
-                    document.write("Remark: second class")
+                    document.write("Remark: second class ", "<br> Total Percentage is : ", per.toFixed(2))
                 }
             }
             else if (counter < 2) {
-                document.write("Remark: ATKT")
+                var total = s1 + s2 + s3;
+                var per = total / 3
+                document.write("Remark: ATKT ", " <br> Total Percentage is : ", per.toFixed(2))
             }
 
             else {
